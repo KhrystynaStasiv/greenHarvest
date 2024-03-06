@@ -157,6 +157,12 @@ section {
 .email-form:hover {
     border: 1px solid #7A3145;
 }
+.email-form:valid {
+    border: 1px solid #3CBC81;
+}
+.email-form:invalid {
+    border: 1px solid #E74A3B;
+}
 
 .textarea {
     height: 95px;
@@ -192,15 +198,30 @@ section {
 }
 .card-img {
     border-radius: 15px;
-    background: url(../images/card-img.jpg) linear-gradient(0deg, rgba(20, 20, 20, 0.30) 0%, rgba(20, 20, 20, 0.30) 100%), lightgray -37.94px -91.672px / 139.734% 142.931% no-repeat;
+    background: url(../images/card-img.jpg), linear-gradient(0deg, rgba(20, 20, 20, 0.30) 0%, rgba(20, 20, 20, 0.30) 100%), lightgray -37.94px -91.672px / 139.734% 142.931% no-repeat;
 }
 .soc-networks {
+    /* width: 357px; */
     margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
 }
 .soc-networks-tittle {
     color: rgba(251, 251, 251, 0.50);
     font-size: 18px;
     font-weight: 600;
     line-height: 1.11;
+    letter-spacing: -0.015em;
+}
+.soc-networks-list {
+    display: flex;
+    gap: 12px;
+}
+.item-link {
+    color: #FBFBFB;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
     letter-spacing: -0.015em;
 }
