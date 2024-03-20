@@ -154,17 +154,17 @@ section {
     line-height: 1.25;
     letter-spacing: -0.02em;
 }
-.email-form:hover {
+.order-form-input:hover {
     border: 1px solid #7A3145;
 }
-.email-form:valid {
+/* .email-form:valid {
     border: 1px solid #3CBC81;
 }
 .email-form:invalid {
     border: 1px solid #E74A3B;
-}
+} */
 
-.textarea {
+.textarea-form {
     height: 95px;
     resize: none;
 }
@@ -192,6 +192,9 @@ section {
     display: block;
     border-radius: 30px;
     background: #576F35;
+}
+.order-form-button:hover {
+    background: #622133;
 }
 .card-soc-networks {
     background: #576F35;

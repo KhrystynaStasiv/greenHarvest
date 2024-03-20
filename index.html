@@ -33,17 +33,11 @@
                     </p>
                     <form class="ordering-form" name="ordering-info" autocomplete="off">
                         <div class="order-form">
-                            <label for="user-name">
-                                <input class="order-form-input" type="text" name="user-name" placeholder="Full Name" id="user-name" />
-                            </label>
-                        
-                            <label for="user-email">
-                                <input class="order-form-input email-form" type="email" name="user-email" placeholder="Email" id="user-email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"/>
-                            </label>
-                            <label>
-                                <textarea class="textarea order-form-input" name="user-comment" placeholder="Comment">
-                                </textarea>
-                            </label> 
+                            <input class="order-form-input" type="text" name="full_name" placeholder="Full Name" required=""
+                                pattern="^[A-Z][a-z]+\s[a-zA-Z\s\.]+" fdprocessedid="ymjqzk">
+                            <input class="order-form-input" type="email" name="email" placeholder="Email" required="" pattern="\w+@\w+\.\w{2,8}"
+                            fdprocessedid="ismq54">
+                            <textarea class="order-form-input textarea-form" name="comment" rows="3" placeholder="Comment" spellcheck="false"></textarea>
                         </div>
                     </form>
                     <button class="order-form-button" type="submit">Send</button>
